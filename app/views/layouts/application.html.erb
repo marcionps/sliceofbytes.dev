@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html data-scheme="dark">
   <head>
     <title>SliceOfBytes</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -11,6 +11,9 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="container main-container flex on-phone--column extended">
+      <%= render "shared/left_sidebar" %>
+      <%= yield %>
+    </div>
   </body>
 </html>
