@@ -1,7 +1,33 @@
-<div id="<%= dom_id post %>">
-  <p>
-    <strong>Title:</strong>
-    <%= post.title %>
-  </p>
+<article id="<%= dom_id post %>">
+  <header class="article-header">
+    <div class="article-details">
+      <div class="article-title-wrapper">
+          <h2 class="article-title">
+              <a href="">
+                <%= post.title %>
+              </a>
+          </h2>
+      
+          <h3 class="article-subtitle">
+            Subtitle
+          </h3>
+      </div>
 
-</div>
+      <footer class="article-time">
+          <div>
+              <%= svg "icons/date.svg" %>
+              <time class="article-time--published">
+                <%= post.created_at %>
+              </time>
+          </div>
+
+          <div>
+              <%= svg "icons/clock.svg" %>
+              <time class="article-time--reading">
+                2 minute read
+              </time>
+          </div>
+      </footer>
+    </div>
+  </header>
+</article>

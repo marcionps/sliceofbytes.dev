@@ -13,7 +13,10 @@
   <body>
     <div class="container main-container flex on-phone--column extended">
       <%= render "shared/left_sidebar" %>
-      <%= yield %>
+
+      <main class="main full-width">
+        <%= yield %>
+      </main>
     </div>
   </body>
 </html>
