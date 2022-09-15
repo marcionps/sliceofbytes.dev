@@ -3,9 +3,7 @@
     <div class="article-details">
       <div class="article-title-wrapper">
           <h2 class="article-title">
-              <a href="">
-                <%= post.title %>
-              </a>
+              <%= link_to post.title, post %>
           </h2>
       
           <h3 class="article-subtitle">
@@ -17,14 +15,14 @@
           <div>
               <%= svg "icons/date.svg" %>
               <time class="article-time--published">
-                <%= post.created_at %>
+                <%= formatted_date(post.created_at) %>
               </time>
           </div>
 
           <div>
               <%= svg "icons/clock.svg" %>
               <time class="article-time--reading">
-                2 minute read
+                <%= post.reading_time %>
               </time>
           </div>
       </footer>

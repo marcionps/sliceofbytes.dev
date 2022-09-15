@@ -10,7 +10,7 @@
     <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
   </head>
 
-  <body>
+  <body class="<%= 'article-page' if params[:controller] == 'posts' && params[:action] == 'show' %>">
     <div class="container main-container flex on-phone--column extended">
       <%= render "shared/left_sidebar" %>
 
