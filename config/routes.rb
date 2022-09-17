@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :categories
+  resources :tags
   get "about", to: "pages#about"
   resources :posts, except: [ :index ]
 
