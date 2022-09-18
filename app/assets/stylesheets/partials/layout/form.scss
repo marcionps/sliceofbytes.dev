@@ -1,0 +1,231 @@
+.search-form {
+    position: relative;
+    --button-size: 80px;
+
+    &.widget {
+        --button-size: 60px;
+
+        label {
+            font-size: 1.3rem;
+            top: 10px;
+        }
+
+        input {
+            font-size: 1.5rem;
+            padding: 30px 20px 15px 20px;
+        }
+    }
+
+    p {
+        position: relative;
+        margin: 0;
+    }
+
+    label {
+        position: absolute;
+        top: 15px;
+        inset-inline-start: 20px;
+        font-size: 1.4rem;
+        color: var(--card-text-color-tertiary);
+    }
+
+    input {
+        padding: 40px 20px 20px;
+        border-radius: var(--card-border-radius);
+        background-color: var(--card-background);
+        box-shadow: var(--shadow-l1);
+        color: var(--card-text-color-main);
+        width: 100%;
+        border: 0;
+        -webkit-appearance: none;
+
+        transition: box-shadow 0.3s ease;
+
+        font-size: 1.8rem;
+
+        &:focus {
+            outline: 0;
+            box-shadow: var(--shadow-l2);
+        }
+    }
+
+    button {
+        position: absolute;
+        inset-inline-end: 0;
+        top: 0;
+        height: 100%;
+        width: var(--button-size);
+        cursor: pointer;
+        background-color: transparent;
+        border: 0;
+
+        padding: 0 10px;
+
+        &:focus {
+            outline: 0;
+
+            svg {
+                stroke-width: 2;
+                color: var(--accent-color);
+            }
+        }
+
+        svg {
+            color: var(--card-text-color-secondary);
+            stroke-width: 1.33;
+            transition: all 0.3s ease;
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+}
+
+.form {
+    position: relative;
+    --button-size: 80px;
+
+    &.widget {
+        --button-size: 60px;
+
+        label {
+            font-size: 1.3rem;
+            top: 10px;
+        }
+
+        input {
+            font-size: 1.5rem;
+            padding: 30px 20px 15px 20px;
+        }
+    }
+
+    p {
+        position: relative;
+        margin: 0;
+    }
+
+    label {
+        display: block;
+        top: 15px;
+        inset-inline-start: 20px;
+        font-size: 1.4rem;
+        color: var(--card-text-color-tertiary);
+    }
+
+    .field:not(:last-child) {
+        margin-bottom: 0.75rem;
+    }
+
+    .control {
+        box-sizing: border-box;
+        clear: both;
+        font-size: 1rem;
+        position: relative;
+        text-align: inherit;
+    }
+
+    input {
+        border-radius: 0.375em;
+        background-color: var(--card-background-light);
+        box-shadow: var(--shadow-l1);
+        color: var(--card-text-color-main-light);
+        width: 100%;
+        max-width: 100%;
+        border: 0;
+        -webkit-appearance: none;
+        height: 2.5em;
+        position: relative;
+
+        transition: box-shadow 0.3s ease;
+
+        font-size: 1.8rem;
+        padding-bottom: calc(0.5em - 1px);
+        padding-left: calc(0.75em - 1px);
+        padding-right: calc(0.75em - 1px);
+        padding-top: calc(0.5em - 1px);
+
+        &:focus {
+            outline: 0;
+            box-shadow: var(--shadow-l2);
+        }
+    }
+
+    .textarea:not([rows]) {
+        max-height: 80em;
+        min-height: 20em;
+    }
+
+    .textarea {
+        border-radius: 0.375em;
+        background-color: var(--card-background-light);
+        box-shadow: var(--shadow-l1);
+        color: var(--card-text-color-main-light);
+        display: block;
+        max-width: 100%;
+        width: 100%;
+        min-width: 100%;
+        padding: calc(0.75em - 1px);
+        resize: vertical;
+
+        font-size: 1.8rem;
+
+        &:focus {
+            outline: 0;
+            box-shadow: var(--shadow-l2);
+        }
+    }
+
+    .bbbbutton {
+        position: absolute;
+        inset-inline-end: 0;
+        top: 0;
+        height: 100%;
+        width: var(--button-size);
+        cursor: pointer;
+        background-color: transparent;
+        border: 0;
+
+        padding: 0 10px;
+
+        &:focus {
+            outline: 0;
+
+            svg {
+                stroke-width: 2;
+                color: var(--accent-color);
+            }
+        }
+
+        svg {
+            color: var(--card-text-color-secondary);
+            stroke-width: 1.33;
+            transition: all 0.3s ease;
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    .buttons {
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .button {
+        background-color: white;
+        border-color: #dbdbdb;
+        border-width: 1px;
+        color: #363636;
+        cursor: pointer;
+        justify-content: center;
+        padding-bottom: calc(0.5em - 1px);
+        padding-left: 1em;
+        padding-right: 1em;
+        padding-top: calc(0.5em - 1px);
+        text-align: center;
+        white-space: nowrap;
+        display: inline-flex;
+    }
+
+}
