@@ -13,4 +13,12 @@ module ApplicationHelper
   def formatted_date(date)
     date.strftime("%b %d, %Y")
   end
+
+  def body_class(controller, action)
+    if controller == 'posts' && %w(show edit new).include?(action)
+      'article-page'
+    else
+      ''
+    end
+  end
 end
