@@ -1,0 +1,29 @@
+<header class="article-header">
+    <div class="article-details">
+        <div class="article-title-wrapper">
+            <h2 class="article-title">
+            <%= link_to post.title, post %>
+            </h2>
+        
+            <h3 class="article-subtitle">
+            <%= post.subtitle %>
+            </h3>
+        </div>
+
+        <footer class="article-time">
+            <div>
+                <%= svg "icons/date.svg" %>
+                <time class="article-time--published">
+                <%= formatted_date(post.created_at) %>
+                </time>
+            </div>
+
+            <div>
+                <%= svg "icons/clock.svg" %>
+                <time class="article-time--reading">
+                <%= post.reading_time %>
+                </time>
+            </div>
+        </footer>
+    </div>
+</header>

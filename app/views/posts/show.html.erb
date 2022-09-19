@@ -1,6 +1,7 @@
 <article class="main-article">
+  <%= render "shared/post_header", post: @post %>
   <section class="article-content">
-    <%= render @post %>
+    <%= @post.content %>
   </section>
 </article>
 
