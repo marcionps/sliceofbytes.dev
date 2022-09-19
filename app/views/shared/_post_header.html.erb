@@ -21,7 +21,7 @@
             <div>
                 <%= svg "icons/clock.svg" %>
                 <time class="article-time--reading">
-                <%= post.reading_time %>
+                    <%= reading_time(post.content) %>
                 </time>
             </div>
         </footer>
